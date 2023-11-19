@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cfunvu4palapn"]
+
+[ext_resource type="Texture2D" uid="uid://h41dyrnj2wfe" path="res://assets/base_tiles/carpet_stair_c.png" id="1_vbg2f"]
+
+[resource]
+albedo_texture = ExtResource("1_vbg2f")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0

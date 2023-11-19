@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dck5p4nlp0ixr"]
+
+[ext_resource type="Texture2D" uid="uid://c5c53abr6k0p0" path="res://assets/base_tiles/wall_base_1.png" id="1_hlsab"]
+
+[resource]
+albedo_texture = ExtResource("1_hlsab")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0

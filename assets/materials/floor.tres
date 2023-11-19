@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6cjlod5b4fbc"]
+
+[ext_resource type="Texture2D" uid="uid://d0h3srb6ticcg" path="res://assets/base_tiles/floot_1.png" id="1_7y4aw"]
+
+[resource]
+albedo_texture = ExtResource("1_7y4aw")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0

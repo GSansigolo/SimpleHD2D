@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bltv78ornqh8t"]
+
+[ext_resource type="Texture2D" uid="uid://cs4chhy4reda6" path="res://assets/base_tiles/carpet_r.png" id="1_35on0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ne1mu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0od8r"]
+albedo_texture = ExtResource("1_35on0")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sf0ef"]
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_ne1mu")
+surface_material_override/0 = SubResource("StandardMaterial3D_0od8r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_sf0ef")

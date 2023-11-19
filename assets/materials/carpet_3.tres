@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cbudg5gk6rdsn"]
+
+[ext_resource type="Texture2D" uid="uid://cs4chhy4reda6" path="res://assets/base_tiles/carpet_r.png" id="1_8po7o"]
+
+[resource]
+albedo_texture = ExtResource("1_8po7o")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0

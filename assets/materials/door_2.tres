@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dfig14gnocgie"]
+
+[ext_resource type="Texture2D" uid="uid://buvwmumw0xbn1" path="res://assets/base_tiles/door_2.png" id="1_qu2pa"]
+
+[resource]
+albedo_texture = ExtResource("1_qu2pa")
+uv1_scale = Vector3(3, 3, 3)
+uv1_offset = Vector3(2, 2.08165e-12, 2.08165e-12)
+texture_filter = 0
