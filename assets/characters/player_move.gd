@@ -20,7 +20,7 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	var input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	var direction = ($SpringArm3D.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	update_facing(input_dir)
 	if direction:
@@ -44,17 +44,13 @@ func update_facing(direction):
 	if direction.x == -1:
 		$Sprite3D.flip_h = false
 		facing = 2
-		print("move left")
 	elif direction.x == 1:
 		$Sprite3D.flip_h = true
 		facing = 2
-		print("move right")
 	elif direction.y == 1:
 		facing = 0
-		print("move_down")
 	elif direction.y == -1:
 		facing = 1
-		print("move up")
 	
 	# Update the frame dynamically for animation
 	$Sprite3D.frame = animation_frame + (facing * FRAMES)
